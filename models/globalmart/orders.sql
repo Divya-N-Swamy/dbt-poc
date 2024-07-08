@@ -28,4 +28,4 @@ from {{ ref('raw_orders') }} as o
 left join {{ ref('raw_customers') }} as c
     on o.customerid=c.customerid
 left join {{ ref('raw_product') }} as p
-    on p.productid=o.productid
+    on o.productid=p.productid

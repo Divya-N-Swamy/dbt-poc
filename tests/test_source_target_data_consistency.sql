@@ -1,10 +1,10 @@
 WITH source_count AS (
     SELECT COUNT(*) AS count
-    FROM `sodium-sunup-428412-a4.dbt_dswamy.raw_orders`
+    FROM `sodium-sunup-428412-a4`.`dbt_dswamy`.`src_orders`
 ),
 target_count AS (
     SELECT COUNT(*) AS count
-    FROM {{ ref('raw_orders') }}
+    FROM {{ ref('orders') }}
 )
 
 SELECT
