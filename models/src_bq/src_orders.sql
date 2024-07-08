@@ -5,4 +5,4 @@
 }}
 
 SELECT * 
-FROM `sodium-sunup-428412-a4.dbt_dswamy.orders` 
+FROM {{ source('dbt_dswamy', 'orders') }}

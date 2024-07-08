@@ -1,0 +1,36 @@
+version : 2
+
+sources:
+  - name: dbt_dswamy
+    tables:
+      - name: orders
+
+models:
+    - name: customers
+      description: "A customer dbt model"
+      columns:
+          - name: CustomerID
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: products
+      columns:
+          - name: productid
+            description: "The primary key for this table"
+            tests:
+                - not_null
+               
+
+          - name: Category
+            tests:
+                - accepted_values:
+                    values:
+                      - 'Office'
+                      - 'Furniture'
+                      - 'Technology'
+
+
+                
+        

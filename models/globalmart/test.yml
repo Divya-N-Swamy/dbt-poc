@@ -1,0 +1,20 @@
+version : 2
+
+models:
+  - name: Orders
+    description: "Table containing order details"
+    columns:
+      - name: OrderID
+        description: "Unique identifier for each order"
+      - name: OrderDate
+        description: "Date when the order was placed"
+      - name: ShipDate
+        description: "Date when the order was shipped"
+      - name: ShipMode
+        description: "Shipping mode for the order"
+      - name: ordersellingprice
+        description: "Selling price of the order"
+      - name: ordercostprice
+        description: "Cost price of the order"
+    tests:
+      - test_order_dates
