@@ -12,6 +12,8 @@ Select
     o.OrderDate,
     o.ShipDate,
     o.ShipMode,
+    o.ordersellingprice,
+    o.ordercostprice,
     o.ordersellingprice - o.ordercostprice as orderprofit,
 -- from raw_customers
     c.CustomerName,
