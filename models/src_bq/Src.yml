@@ -4,7 +4,7 @@ sources:
   - name: dbt_dswamy
     tables:
       - name: orders
-      - name: customers
+     
 
 models:
     - name: customers
