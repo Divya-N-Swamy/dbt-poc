@@ -1,0 +1,1 @@
+Select * from {{ source('dbt_dswamy', 'orders') }}
