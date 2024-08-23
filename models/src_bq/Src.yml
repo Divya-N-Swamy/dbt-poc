@@ -16,6 +16,8 @@ models:
                 - unique
                 - not_null
 
+                
+
     - name: products
       columns:
           - name: productid
